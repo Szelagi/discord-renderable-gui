@@ -1,5 +1,5 @@
 # discord-renderable-gui
- Bibloteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie 
+ Biblioteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie 
 
 Wymaga:
-* bibloteki discord.js
+* biblioteka discord.js
