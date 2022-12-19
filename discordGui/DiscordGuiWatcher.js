@@ -1,4 +1,4 @@
-class DiscordGuiWatcher {
+export default class DiscordGuiWatcher {
     #classGuis = new Set();
     #customIdPrefix = '';
     constructor(client, customIdPrefix) {
@@ -6,7 +6,6 @@ class DiscordGuiWatcher {
         client.on('interactionCreate', async (i) => {
             try {
                 if (i.customId && !i.customId.startsWith(this.#customIdPrefix)) return;
-                console.log('TAK')
             } catch(e) {
                 console.error(e);
             }
@@ -17,5 +16,3 @@ class DiscordGuiWatcher {
         return this;
     }
 }
-
-module.exports = DiscordGuiWatcher;

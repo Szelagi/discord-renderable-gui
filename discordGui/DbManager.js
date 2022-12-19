@@ -3,7 +3,7 @@
     aby bardzo łatwo można było ją przerobić na inną bazę danych.
  */
 
-class DbManager {
+export default class DbManager {
     static async insertGuiRecord(id, instance, data) {
 
     }
@@ -14,5 +14,3 @@ class DbManager {
 
     }
 }
-
-module.exports = DbManager;

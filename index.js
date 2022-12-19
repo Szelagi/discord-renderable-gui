@@ -1,7 +1,7 @@
-const client = require('./client/client');
-const DiscordGuiWatcher = require('./discordGui/DiscordGuiWatcher');
-const Example1Gui = require('./discordGui/gui/example1');
-const GuiBuilder = require('./discordGui/GuiBuilder');
+import client from "./client/client.js";
+import DiscordGuiWatcher from "./discordGui/DiscordGuiWatcher.js";
+import Example1Gui from "./discordGui/gui/example1.js";
+import GuiBuilder from "./discordGui/GuiBuilder.js";
 
 client.on('ready', () => {
     new DiscordGuiWatcher(client, 'gui:')

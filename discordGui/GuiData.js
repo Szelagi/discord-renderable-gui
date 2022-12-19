@@ -1,8 +1,8 @@
-const { BaseInteraction, Message } = require('discord.js');
-const GuiBuilder = require('./GuiBuilder');
-const DataManager = require('./manager/DataManager');
+import { BaseInteraction, Message } from "discord.js";
+import GuiBuilder from "./GuiBuilder.js";
+import DataManager from "./manager/DataManager.js";
 
-class GuiData {
+export default class GuiData {
     #interaction = null;
     #message = null;
     dataManager = null;
@@ -27,5 +27,3 @@ class GuiData {
         return this.#message;
     }
 };
-
-module.exports = GuiData;

@@ -1,4 +1,4 @@
-class DataManager {
+export default class DataManager {
     #save = false;
     #data = null;
     constructor(data) {
@@ -18,5 +18,3 @@ class DataManager {
         return this.#save;
     }
 }
-
-module.exports = DataManager;

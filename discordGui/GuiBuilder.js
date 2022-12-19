@@ -1,6 +1,6 @@
-const { BaseInteraction, Message } = require('discord.js');
+import { BaseInteraction, Message } from "discord.js";
 
-class GuiBuilder {
+export default class GuiBuilder {
     #channel = null;
     #user = null;
     #member = null;
@@ -62,5 +62,3 @@ class GuiBuilder {
         return this.#message;
     }
 }
-
-module.exports = GuiBuilder;

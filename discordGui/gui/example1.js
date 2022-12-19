@@ -1,7 +1,7 @@
-const DiscordGui = require('../DiscordGui');
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+import DiscordGui from "../DiscordGui.js";
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from "discord.js";
 
-class Example1Gui extends DiscordGui {
+export default class Example1Gui extends DiscordGui {
     static init() {
 
     }
@@ -21,5 +21,3 @@ class Example1Gui extends DiscordGui {
         };
     }
 };
-
-module.exports = Example1Gui;

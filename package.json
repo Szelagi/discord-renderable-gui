@@ -2,7 +2,8 @@
   "name": "discord-renderable-gui",
   "version": "0.0.1",
   "description": "Bibloteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie",
-  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,8 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "lowdb": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=14.16"
   }
 }

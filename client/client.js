@@ -1,8 +1,7 @@
-const { token: TOKEN} = require('./config.json');
-const rest = require('./rest');
+import CLIENT_CONFIG from "./config.json" assert { type: "json"};// experimental feature!
+import rest from "./rest.js";
+import { Client, GatewayIntentBits } from "discord.js";
 
-
-const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
@@ -11,7 +10,7 @@ const client = new Client({ intents: [
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    await require('./command')(client, rest);
+    //await require('./command')(client, rest);
 });
 
 // client.on('interactionCreate', async interaction => {
@@ -22,5 +21,6 @@ client.on('ready', async () => {
 //     }
 // });
 
-client.login(TOKEN);
-module.exports = client;
+client.login(CLIENT_CONFIG.token);
+
+export default client;

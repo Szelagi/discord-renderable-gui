@@ -1,8 +1,8 @@
-const db = require('./db');
-const GuiBuilder = require('./GuiBuilder');
-const GuiData = require('./GuiData');
+import DbManager from "./DbManager.js";
+import GuiBuilder from "./GuiBuilder.js";
+import GuiData from "./GuiData.js";
 
-class DiscordGui {
+export default class DiscordGui {
     /*
         @guiBuilder: GuiBuilder || Interaction || Message
         @callback: (GuiBuilder, GuiData) => {...}
@@ -35,5 +35,3 @@ class DiscordGui {
         // interaction.reply(renderData);
     }
 }
-
-module.exports = DiscordGui;
