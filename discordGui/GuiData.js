@@ -6,16 +6,17 @@ export default class GuiData {
     #interaction = null;
     #message = null;
     dataManager = null;
-    from(i, dbGui) {
-        if (i instanceof BaseInteraction) {
-            this.#interaction = i;
+    watcher = null;
+    from({interaction, dbg, watcher}) {
+        if (interaction instanceof BaseInteraction) {
+            this.#interaction = interaction;
         }
-        if (i instanceof Message) {
-            this.#message = i;
+        if (interaction instanceof Message) {
+            this.#message = interaction;
         }
-        if (i instanceof GuiBuilder) {
-            this.#interaction = i.getInteraction();
-            this.#message = i.getMessage();
+        if (interaction instanceof GuiBuilder) {
+            this.#interaction = interaction.getInteraction();
+            this.#message = interaction.getMessage();
         }
         this.dataManager = new DataManager(dbGui?.data);
         return this;

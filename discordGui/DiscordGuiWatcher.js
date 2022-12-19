@@ -1,11 +1,13 @@
+import GuiData from "./GuiData.js";
+
 export default class DiscordGuiWatcher {
     #classGuis = new Set();
-    #customIdPrefix = '';
+    customIdPrefix = '';
     constructor(client, customIdPrefix) {
-        this.#customIdPrefix = customIdPrefix;
+        this.customIdPrefix = customIdPrefix;
         client.on('interactionCreate', async (i) => {
             try {
-                if (i.customId && !i.customId.startsWith(this.#customIdPrefix)) return;
+                if (i.customId && !i.customId.startsWith(this.customIdPrefix)) return;
             } catch(e) {
                 console.error(e);
             }
