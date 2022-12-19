@@ -1,6 +1,7 @@
 import CLIENT_CONFIG from "./config.json" assert { type: "json"};// experimental feature!
 import rest from "./rest.js";
 import { Client, GatewayIntentBits } from "discord.js";
+import commandLoader from "./commandLoader.js";
 
 const client = new Client({ intents: [
         GatewayIntentBits.Guilds,
@@ -10,7 +11,7 @@ const client = new Client({ intents: [
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    //await require('./command')(client, rest);
+    await commandLoader(client, rest);
 });
 
 // client.on('interactionCreate', async interaction => {
