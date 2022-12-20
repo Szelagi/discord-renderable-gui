@@ -1,4 +1,4 @@
-import DiscordGui from "../DiscordGui.js";
+import DiscordGui from "./discordGui/DiscordGui.js";
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from "discord.js";
 
 export default class Example1Gui extends DiscordGui {

@@ -18,7 +18,7 @@ export default class GuiData {
             this.#interaction = interaction.getInteraction();
             this.#message = interaction.getMessage();
         }
-        this.dataManager = new DataManager(dbGui?.data);
+        this.dataManager = new DataManager(dbg?.data);
         return this;
     }
     getInteraction() {

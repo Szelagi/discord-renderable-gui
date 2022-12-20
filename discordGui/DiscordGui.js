@@ -10,12 +10,14 @@ export default class DiscordGui {
     static async create(guiBuilder, callback) {
         if (!(guiBuilder instanceof GuiBuilder))
             guiBuilder = new GuiBuilder().from(guiBuilder);
-        const dbGui = {
+        const dbg = {
             id: undefined,
             instace: this.constructor.name,
             data: {}
         }
-        const guiData = new GuiData().from(guiBuilder, dbGui);
+        const guiData = new GuiData().from(guiBuilder, dbg, {
+            caller: 
+        });
         if (callback) await callback(guiBuilder, guiData);
         if (this.init) await this.init(guiBuilder, guiData);
         if (!this.render) {
