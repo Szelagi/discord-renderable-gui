@@ -1,0 +1,11 @@
+{
+  "guis": [
+    {
+      "id": "1054757829103337544",
+      "instance": "Example1Gui",
+      "data": {
+        "foo": "poo"
+      }
+    }
+  ]
+}

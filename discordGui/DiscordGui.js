@@ -15,7 +15,7 @@ export default class DiscordGui {
             guiBuilder = new GuiBuilder().from(guiBuilder);
         const dbg = {
             id: undefined,
-            instace: this.constructor.name,
+            instance: this.name,
             data: {}
         }
         const guiData = new GuiData().from(guiBuilder, dbg, {
@@ -29,8 +29,6 @@ export default class DiscordGui {
         }
         const renderResponse = await this.render(guiData);
 
-        // zapisanie wszystkiego
-
         if (guiData.getInteraction() || guiData.getMessage()) {
            // console.log(guiData.getInteraction())
             const replyResponse = await guiData.getInteraction().reply(renderResponse);
@@ -39,11 +37,9 @@ export default class DiscordGui {
                 const message = await guiData.getInteraction().fetchReply();
                 dbg.id = message.id;
             }
-
+            // TODO; support Message response;
         }
-
-
-        // const renderData = this.render();
-        // interaction.reply(renderData);
+        const data = guiData.dataManager.getSaveStatus ? dbg.data : {};
+        await DbManager.insertGuiRecord(dbg.id, dbg.instance, data);
     }
 }

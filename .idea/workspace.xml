@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DbManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DbManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DiscordGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DiscordGui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/database/gui.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example1.js" beforeDir="false" afterPath="$PROJECT_DIR$/example1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +48,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/discordGui" />
-      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,7 +62,7 @@
       <updated>1670522805687</updated>
       <workItem from="1670522808119" duration="17117000" />
       <workItem from="1670801430121" duration="110000" />
-      <workItem from="1671480188672" duration="6966000" />
+      <workItem from="1671480203207" duration="8912000" />
     </task>
     <servers />
   </component>
@@ -70,19 +74,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
