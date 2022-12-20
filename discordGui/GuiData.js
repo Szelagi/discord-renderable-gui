@@ -7,7 +7,12 @@ export default class GuiData {
     #message = null;
     dataManager = null;
     watcher = null;
-    from({interaction, dbg, watcher}) {
+    caller = null;
+    from(interaction, dbg, props) {
+        const { caller, watcher } = props;
+        this.caller = caller || null;
+        this.watcher = watcher || null;
+
         if (interaction instanceof BaseInteraction) {
             this.#interaction = interaction;
         }
