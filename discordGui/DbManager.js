@@ -36,15 +36,16 @@ export default class DbManager {
      */
     static async getGuiRecord(id) {
         await db.read();
-        return db.data.guis.find(e => e.id = id);
+        return db.data.guis.find(e => e.id === id);
     }
-
     /**
      * @param id: String
      * @param obj: {id?: String, instance?: String, data: Object}
      * @returns {Promise<boolean>}
      */
     static async alterGuiRecord(id, obj) {
-
+        await db.read();
+        db.data.guis.find(e => e.id === id).data = obj;
+        await db.write();
     }
 }

@@ -1,10 +1,28 @@
 {
   "guis": [
     {
-      "id": "1054757829103337544",
+      "id": "1054887264058093679",
       "instance": "Example1Gui",
       "data": {
-        "foo": "poo"
+        "value": 5
+      }
+    },
+    {
+      "id": "1064570468499197973",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 19,
+        "_components": {}
+      }
+    },
+    {
+      "id": "1064651117444730921",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {}
+        }
       }
     }
   ]

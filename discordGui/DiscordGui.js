@@ -2,13 +2,36 @@ import DbManager from "./DbManager.js";
 import GuiBuilder from "./GuiBuilder.js";
 import GuiData from "./GuiData.js";
 import CallerType from "./CallerType.js";
+import DisplayManager from "./manager/DisplayManager.js";
 
 export default class DiscordGui {
     /*
         @guiBuilder: GuiBuilder || Interaction || Message
         @callback: (GuiBuilder, GuiData) => {...}
      */
+    static useModules = [];
+    static async _use(guiData) {
+        for (let module of this.useModules) {
+            if (module.useBefore) await module.useBefore(guiData, this);//wsparcie modółów
+        }
+        await this.use(guiData);
+        for (let module of this.useModules) {
+            if (module.useAfter) await module.useAfter(guiData, this);//wsparcie modółów
+        }
+    }
+    static async _render(guiData) {
+        for (let module of this.useModules) {
+            if (module.renderBefore) await module.renderBefore(guiData, this);//wsparcie modółów
+        }
+        const response = await this.render(guiData);
+        for (let module of this.useModules) {
+            if (module.renderAfter) await module.renderAfter(guiData, this);//wsparcie modółów
+        }
+        return response;
+    }
+
     static async init(guiData, guiBuilder) {};
+    static async use(guiData) {};
     static async render(guiData) {};
     static async create(guiBuilder, callback) {
         if (!(guiBuilder instanceof GuiBuilder))
@@ -27,7 +50,7 @@ export default class DiscordGui {
             console.error(new Error('Klasa nie posiada metody renderacyjnej!'));
             process.exit(1);
         }
-        const renderResponse = await this.render(guiData);
+        const renderResponse = await this._render(guiData);
 
         if (guiData.getInteraction() || guiData.getMessage()) {
            // console.log(guiData.getInteraction())
@@ -39,6 +62,7 @@ export default class DiscordGui {
             }
             // TODO; support Message response;
         }
+        console.log('dbg', dbg)
         const data = guiData.dataManager.getSaveStatus ? dbg.data : {};
         await DbManager.insertGuiRecord(dbg.id, dbg.instance, data);
     }

@@ -1,6 +1,7 @@
 import { BaseInteraction, Message } from "discord.js";
 import GuiBuilder from "./GuiBuilder.js";
 import DataManager from "./manager/DataManager.js";
+import DisplayManager from "./manager/DisplayManager.js";
 
 export default class GuiData {
     #interaction = null;
@@ -24,6 +25,7 @@ export default class GuiData {
             this.#message = interaction.getMessage();
         }
         this.dataManager = new DataManager(dbg?.data);
+        this.displayManager = new DisplayManager();
         return this;
     }
     getInteraction() {

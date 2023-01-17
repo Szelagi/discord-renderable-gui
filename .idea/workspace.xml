@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordGui/Component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordGui/ComponentWatcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordGui/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordGui/manager/DisplayManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordGui/module/ComponentWatcherModule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kickComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discordGui/DbManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DbManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discordGui/DiscordGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DiscordGui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/database/gui.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DiscordGuiWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DiscordGuiWatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/GuiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/GuiData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example1.js" beforeDir="false" afterPath="$PROJECT_DIR$/example1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +56,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/discordGui" />
       <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
@@ -62,7 +70,10 @@
       <updated>1670522805687</updated>
       <workItem from="1670522808119" duration="17117000" />
       <workItem from="1670801430121" duration="110000" />
-      <workItem from="1671480203207" duration="8912000" />
+      <workItem from="1671480188672" duration="9364000" />
+      <workItem from="1671573926441" duration="1410000" />
+      <workItem from="1671827226753" duration="137000" />
+      <workItem from="1673883746423" duration="14944000" />
     </task>
     <servers />
   </component>
@@ -74,7 +85,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
