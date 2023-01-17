@@ -24,6 +24,216 @@
           "0": {}
         }
       }
+    },
+    {
+      "id": "1065002030617333780",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {}
+        }
+      }
+    },
+    {
+      "id": "1065002335794897067",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 11,
+        "_components": {
+          "0": {},
+          "null": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065006193447284808",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {},
+          "null": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065006718184071168",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {},
+          "undefined": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065006859423055962",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {},
+          "undefined": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065007454049546282",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {},
+          "null": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065007645162995783",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065007929037692949",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065008110214848523",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065012058447421481",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065013099578531974",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065013530845261874",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065014100972798005",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "_key": "kickComponent",
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065015016258015383",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "_key": "kickComponent",
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065015128170434611",
+      "instance": "Example1Gui",
+      "data": {
+        "value": 5,
+        "_components": {
+          "0": {
+            "_key": "kickComponent",
+            "player": "758998988912853002"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065047703437975632",
+      "instance": "IteratorGui",
+      "data": {
+        "value": 0
+      }
+    },
+    {
+      "id": "1065053661262254112",
+      "instance": "IteratorGui",
+      "data": {
+        "value": -10,
+        "_components": {
+          "0": {
+            "_key": "editValueComponent",
+            "number": 5
+          },
+          "1": {
+            "_key": "editValueComponent",
+            "number": -5
+          }
+        }
+      }
     }
   ]
 }

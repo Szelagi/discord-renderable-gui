@@ -1,30 +1,39 @@
+import Config from './config.json' assert { type: "json"};// experimental feature!
+const { prefix, splitter } = Config;
+
 class Component {
     uid = null;
-    constructor(guiData) {
+    guiData = null;
+    constructor(guiData, key) {
+        this.guiData = guiData;
         const data = guiData.dataManager.getData();
         const uid = Object.keys(data._components).length;
-        data._components[uid] = {};
+        this.uid = uid;
+        data._components[uid] = {
+            _key: key
+        };
         guiData.dataManager.saveData();
     }
     setParams(params) {
-        const data = guiData.dataManager.getData();
-        data._components[this.uid] = params;
-        guiData.dataManager.saveData();
+        const data = this.guiData.dataManager.getData();
+        const componentData = data._components[this.uid];
+        const key = componentData._key;
+        data._components[this.uid] = {_key: key, ...params};
+        this.guiData.dataManager.saveData();
     }
     render(args) {}
-    static async execute(guiData, ) {}
-    static async activate(guiData) {
-        const [name, uid] = guiData.getInteraction().customId.split(':');
-        if (name == this.name) {
+    static async execute(guiData) {}
+    static async checkUse(guiData) {
+        const [_, uid] = guiData.getInteraction().customId.split(splitter);
+        const data = guiData.dataManager.getData();
+        const key = data._components[uid]._key;
+        if (key === this.key) {
             const args = guiData.dataManager.getData()._components[uid];
             await this.execute(guiData, args);
-            return true;
         }
-        return false;
     }
     getCustomId() {
-        cons prefix =
-        return this.name + ':' + this.uid;
+        return prefix + splitter + this.uid;
     }
 }
 

@@ -3,15 +3,16 @@ import { ButtonInteraction } from "discord.js";
 import DbManager from "./DbManager.js";
 import CallerType from "./CallerType.js";
 import DisplayManager from "./manager/DisplayManager.js";
+import Config from './config.json' assert { type: "json"};// experimental feature!
+
+const prefix = Config.prefix;
 
 export default class DiscordGuiWatcher {
     #classGuis = [];
-    customIdPrefix = '';
-    constructor(client, customIdPrefix) {
-        this.customIdPrefix = customIdPrefix;
+    constructor(client) {
         client.on('interactionCreate', async (i) => {
             try {
-                if (i.customId && !i.customId.startsWith(this.customIdPrefix)) return;
+                if (i.customId && !i.customId.startsWith(prefix)) return;
                 if (i instanceof ButtonInteraction) {
                     const messageId = i.message.id;
                     const dbg = await DbManager.getGuiRecord(messageId);

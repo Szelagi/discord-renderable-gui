@@ -1,3 +1,4 @@
 {
-  "prefix": "gui:"
+  "prefix": "gui",
+  "splitter": ":"
 }

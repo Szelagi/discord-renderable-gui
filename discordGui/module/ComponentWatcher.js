@@ -1,13 +1,12 @@
-class ComponentWatcherModule {
+class ComponentWatcher {
     #components = null;
     constructor(...components) {
         this.#components = components;
     }
-    useBefore(g) {
+    useBefore(guiData) {
         for (let component of this.#components) {
-            component.activate();
+            component.checkUse(guiData);
         }
-        console.log('usee')
     }
     renderBefore(g) {
         g.dataManager.getData()._components = {};
@@ -16,4 +15,4 @@ class ComponentWatcherModule {
     }
 }
 
-export default ComponentWatcherModule;
+export default ComponentWatcher;

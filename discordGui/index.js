@@ -1,13 +1,14 @@
 import DiscordGui from "./DiscordGui.js";
+export { DiscordGui as Gui };
+
 import DiscordGuiWatcher from "./DiscordGuiWatcher.js";
+export { DiscordGuiWatcher as GuiWatcher };
+
 import GuiBuilder from "./GuiBuilder.js";
+export { GuiBuilder as GuiInitiator };
 
-export default {
-    Gui: DiscordGui,
-    Builder: GuiBuilder,
-    Watcher: DiscordGuiWatcher
-}
+import Component from "./Component.js";
+export { Component as Component };
 
-// export const Gui = DiscordGui;
-// export const Builder = GuiBuilder;
-// export const Watcher = DiscordGuiWatcher;
+import ComponentWatcher from "./module/ComponentWatcher.js";
+export { ComponentWatcher as ComponentWatcher };
