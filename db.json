@@ -222,15 +222,485 @@
       "id": "1065053661262254112",
       "instance": "IteratorGui",
       "data": {
-        "value": -10,
+        "value": 30,
         "_components": {
           "0": {
             "_key": "editValueComponent",
-            "number": 5
+            "number": 5,
+            "maxValue": 30
           },
           "1": {
             "_key": "editValueComponent",
-            "number": -5
+            "number": -5,
+            "maxValue": -35
+          }
+        }
+      }
+    },
+    {
+      "id": "1065298920047136818",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true
+      }
+    },
+    {
+      "id": "1065299036707495958",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true
+      }
+    },
+    {
+      "id": "1065304173316427827",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065304238395232356",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065305368420438146",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065305597920169984",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065305746515951636",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065306572571541634",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065306728104743032",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065306960460796015",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065307090610032761",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065307254498275339",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          }
+        }
+      }
+    },
+    {
+      "id": "1065309371271237862",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          },
+          "2": {
+            "_key": "sdajbknsdjkfn"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065309556596551750",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          },
+          "2": {
+            "_key": "sdajbknsdjkfn"
+          }
+        }
+      }
+    },
+    {
+      "id": "1065309958788366417",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://img.wprost.pl/img/graficzne-przedstawienie-emotikony-xd/6d/86/6ef09a8f0837762197930332167e.jpeg"
+          }
+        ],
+        "position": 1,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          },
+          "2": {
+            "_key": "sdajbknsdjkfn"
+          }
+        }
+      }
+    },
+    {
+      "id": "1066377934346141868",
+      "instance": "MusicPlayer",
+      "data": {
+        "list": [
+          {
+            "title": "Nie obchodzi mnie",
+            "author": "Czuxx",
+            "length": "2:30",
+            "icon": "https://obcas.pl/wp-content/uploads/2022/01/czuux-1.png"
+          },
+          {
+            "title": "Random track",
+            "author": "Nonanme",
+            "length": "21:37",
+            "icon": "https://img.wprost.pl/img/graficzne-przedstawienie-emotikony-xd/6d/86/6ef09a8f0837762197930332167e.jpeg"
+          }
+        ],
+        "position": 0,
+        "isPlay": true,
+        "_components": {
+          "0": {
+            "_key": "asjadsjasdads",
+            "isForward": true
+          },
+          "1": {
+            "_key": "asjadsjasdads",
+            "isForward": false
+          },
+          "2": {
+            "_key": "sdajbknsdjkfn"
           }
         }
       }

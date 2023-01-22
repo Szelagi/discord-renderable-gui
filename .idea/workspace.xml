@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gui/IteratorGui/EditValueComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/IteratorGui/IteratorGui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/musicPlayer/MoveComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/musicPlayer/MusicPlayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/musicPlayer/StatusComonent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discordGui/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/Component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/DiscordGuiWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/DiscordGuiWatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/module/ComponentWatcherModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/module/ComponentWatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/IteratorGui/EditValueComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/gui/IteratorGui/EditValueComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/IteratorGui/IteratorGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/gui/IteratorGui/IteratorGui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kickComponent.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
@@ -83,7 +87,10 @@
       <workItem from="1671480188672" duration="9364000" />
       <workItem from="1671573926441" duration="1410000" />
       <workItem from="1671827226753" duration="137000" />
-      <workItem from="1673883746423" duration="22203000" />
+      <workItem from="1673883746423" duration="23373000" />
+      <workItem from="1674056492896" duration="4262000" />
+      <workItem from="1674214448222" duration="63000" />
+      <workItem from="1674314670762" duration="1430000" />
     </task>
     <servers />
   </component>

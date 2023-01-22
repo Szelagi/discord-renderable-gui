@@ -1,5 +1,9 @@
-import Config from './config.json' assert { type: "json"};// experimental feature!
+import Config from './config.json' assert { type: "json"};
+import DiscordGui from "./DiscordGui.js";
+// experimental feature!
 const { prefix, splitter } = Config;
+
+import {ButtonBuilder} from "discord.js";
 
 class Component {
     uid = null;

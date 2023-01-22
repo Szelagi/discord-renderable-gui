@@ -17,8 +17,8 @@ class IteratorGui extends Gui {
     }
     static async render(g) {
         const { value } = g.dataManager.getData();
-        const removeComponent = new EditValueComponent(g, 5).render();
-        const addComponent = new EditValueComponent(g, -5).render();
+        const removeComponent = new EditValueComponent(g, 5, 30).render();
+        const addComponent = new EditValueComponent(g, -5, -35).render();
         return {
             content: `Wartość: ${value}`,
             components: [
