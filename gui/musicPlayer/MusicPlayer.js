@@ -39,8 +39,8 @@ class MusicPlayer extends Gui {
             .setTitle("Odtwarzacz muzyki")
             .setDescription(`**Tytuł:** ${song.title}\n**Autor:** ${song.author}\n**Długość utóru:** ${song.length}`)
             .setThumbnail(song.icon)
-        const forwardComponent = new MoveComponent(g, true).render();
-        const backwardComponent = new MoveComponent(g, false).render();
+        const forwardComponent = new MoveComponent(g, true);
+        const backwardComponent = new MoveComponent(g, false);
         const statusComponent = new StatusComonent(g).render();
         return {
             content: ' ',

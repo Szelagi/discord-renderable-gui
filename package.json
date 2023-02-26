@@ -5,15 +5,22 @@
   "exports": "./index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node index.js"
   },
   "author": "Kamil Szelągiewicz",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.7.1",
-    "lowdb": "^5.0.5"
+    "lowdb": "^5.0.5",
+    "ts-node": "^10.9.1"
   },
   "engines": {
     "node": ">=14.16"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
   }
 }

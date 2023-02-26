@@ -6,13 +6,25 @@ class MoveComponent extends Component {
     static key = "asjadsjasdads";
     constructor(g, isForward) {
         super(g, MoveComponent.key);
-        super.setParams({
-            isForward
-        })
+
+        console.log("NEW");
+
+
         const data = g.dataManager.getData();
-        this.isForward = isForward;
-        this.list = data.list;
-        this.position = data.position;
+        let list = data.list;
+        let position = data.position;
+
+        let label;
+        if (isForward) {
+            label = '>';
+        } else {
+            label = '<';
+        }
+        this
+            .setLabel(label)
+            .setStyle(ButtonStyle.Secondary)
+            .setDisabled(MoveComponent.isDisabled(list, position, isForward));
+
     }
     static isDisabled(list, position, forword) {
         if (forword) {
@@ -22,21 +34,13 @@ class MoveComponent extends Component {
             return position < (list.length - 1 );
         }
     }
-    render() {
-        let label;
-        if (this.isForward) {
-            label = '>';
-        } else {
-            label = '<';
-        }
-        return new ButtonBuilder()
-            .setLabel(label)
-            .setStyle(ButtonStyle.Secondary)
-            .setCustomId(this.getCustomId())
-            .setDisabled(MoveComponent.isDisabled(this.list, this.position, this.isForward));
-    }
+
     static async execute(g, p) {
+
+
         const data = g.dataManager?.getData();
+
+
         if (p.isForward) {
             data.position++;
         } else {
@@ -46,5 +50,7 @@ class MoveComponent extends Component {
         g.displayManager.update();
     }
 }
+
+new MoveComponent();
 
 export default MoveComponent;

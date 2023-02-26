@@ -2,8 +2,7 @@ import { BaseInteraction, Message } from "discord.js";
 import GuiBuilder from "./GuiBuilder.js";
 import DataManager from "./manager/DataManager.js";
 import DisplayManager from "./manager/DisplayManager.js";
-
-export default class GuiData {
+class GuiData {
     #interaction = null;
     #message = null;
     dataManager = null;
@@ -35,3 +34,5 @@ export default class GuiData {
         return this.#message;
     }
 };
+
+export default GuiData;

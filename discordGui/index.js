@@ -7,8 +7,8 @@ export { DiscordGuiWatcher as GuiWatcher };
 import GuiBuilder from "./GuiBuilder.js";
 export { GuiBuilder as GuiInitiator };
 
-import Component from "./Component.js";
-export { Component as Component };
+import ButtonComponent from "./component/ButtonComponent.js";
+export { ButtonComponent as Component };
 
 import ComponentWatcher from "./module/ComponentWatcher.js";
 export { ComponentWatcher as ComponentWatcher };

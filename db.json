@@ -688,8 +688,8 @@
             "icon": "https://img.wprost.pl/img/graficzne-przedstawienie-emotikony-xd/6d/86/6ef09a8f0837762197930332167e.jpeg"
           }
         ],
-        "position": 0,
-        "isPlay": true,
+        "position": 1,
+        "isPlay": false,
         "_components": {
           "0": {
             "_key": "asjadsjasdads",
@@ -701,6 +701,25 @@
           },
           "2": {
             "_key": "sdajbknsdjkfn"
+          }
+        }
+      }
+    },
+    {
+      "id": "1079425936195342468",
+      "instance": "IteratorGui",
+      "data": {
+        "value": 0,
+        "_components": {
+          "0": {
+            "number": 5,
+            "maxValue": 30,
+            "_key": "editValueComponent"
+          },
+          "1": {
+            "number": -5,
+            "maxValue": -35,
+            "_key": "editValueComponent"
           }
         }
       }
