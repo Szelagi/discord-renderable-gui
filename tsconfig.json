@@ -4,7 +4,9 @@
     "moduleResolution": "NodeNext",
     "target": "ES2022",
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "build"
   },
-  "exclude": ["**/*"]
+  "exclude": [
+    "**/*"
+  ]
 }

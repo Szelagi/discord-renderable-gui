@@ -5,21 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discordGui/ts/ButtonComponent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discordGui/ts/GuiData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/component/ButtonComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/GuiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/GuiData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discordGui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/discordGui/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/musicPlayer/MoveComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/gui/musicPlayer/MoveComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/musicPlayer/MusicPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/gui/musicPlayer/MusicPlayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/commandLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/commandLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/CallerType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/CallerType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ComponentWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ComponentWatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DbManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DbManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DiscordGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DiscordGui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/DiscordGuiWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DiscordGuiWatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/GuiBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/GuiBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/GuiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/GuiData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/component/ButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/component/ButtonComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/manager/DataManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/manager/DataManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/manager/DisplayManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/manager/DisplayManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/module/ComponentWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/module/ComponentWatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/ButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/ButtonComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/ButtonComponent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/ButtonComponent.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/ButtonComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/ButtonComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/GuiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/GuiData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/GuiData.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/GuiData.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discordGui/ts/GuiData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/ts/GuiData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ButtonComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ButtonComponent.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/GuiData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/GuiData.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/IteratorGui/EditValueComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/IteratorGui/IteratorGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/IteratorGui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/musicPlayer/MoveComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/musicPlayer/MoveComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/musicPlayer/MusicPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/musicPlayer/MusicPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/musicPlayer/StatusComonent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/musicPlayer/StatusComonent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +103,7 @@
       <recent name="$PROJECT_DIR$/discordGui/ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/discordGui" />
       <recent name="$PROJECT_DIR$/discordGui/component" />
       <recent name="$PROJECT_DIR$" />
@@ -88,7 +111,7 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -128,7 +151,7 @@
       <workItem from="1675263092306" duration="377000" />
       <workItem from="1675600403260" duration="901000" />
       <workItem from="1676736618445" duration="39000" />
-      <workItem from="1677423800956" duration="2056000" />
+      <workItem from="1677423800956" duration="2884000" />
     </task>
     <servers />
   </component>
