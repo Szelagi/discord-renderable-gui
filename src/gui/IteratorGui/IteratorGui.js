@@ -1,20 +1,20 @@
-import {Gui} from "../../discordGui/index.js";
-import {ComponentWatcher} from "../../discordGui/index.js";
-import {ActionRowBuilder} from "discord.js";
-import EditValueComponent from "./EditValueComponent.js";
+import { ComponentWatcher, Gui } from "../../discordGui/index.js";
+import { ActionRowBuilder } from "discord.js";
+import EditValueComponent from "./EditValueComponent.ts";
 
 const componentWatcher = new ComponentWatcher(EditValueComponent);
 
 class IteratorGui extends Gui {
     static useModules = [componentWatcher];
+
     static async init(g) {
         const d = g.dataManager.getData();
         d.value = 0;
         g.dataManager.saveData();
     }
-    static async use(g) {
 
-    }
+    static async use(g) {}
+
     static async render(g) {
         const { value } = g.dataManager.getData();
         const removeComponent = new EditValueComponent(g, 5, 30).render();
@@ -22,9 +22,12 @@ class IteratorGui extends Gui {
         return {
             content: `Wartość: ${value}`,
             components: [
-                new ActionRowBuilder().setComponents(removeComponent, addComponent)
-            ]
-        }
+                new ActionRowBuilder().setComponents(
+                    removeComponent,
+                    addComponent
+                ),
+            ],
+        };
     }
 }
 

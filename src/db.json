@@ -709,7 +709,7 @@
       "id": "1079425936195342468",
       "instance": "IteratorGui",
       "data": {
-        "value": 0,
+        "value": -20,
         "_components": {
           "0": {
             "number": 5,

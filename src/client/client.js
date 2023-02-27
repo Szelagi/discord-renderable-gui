@@ -1,15 +1,17 @@
-import CLIENT_CONFIG from "./config.json" assert { type: "json"};// experimental feature!
+import CLIENT_CONFIG from "./config.json" assert { type: "json" }; // experimental feature!
 import rest from "./rest.js";
 import { Client, GatewayIntentBits } from "discord.js";
 import commandLoader from "./commandLoader.js";
 
-const client = new Client({ intents: [
+const client = new Client({
+    intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
-    ]});
+    ],
+});
 
-client.on('ready', async () => {
+client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
     await commandLoader(client, rest);
 });

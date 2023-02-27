@@ -2,17 +2,17 @@
   "name": "discord-renderable-gui",
   "version": "0.0.1",
   "description": "Bibloteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie",
-  "exports": "./src/index.js",
-  "type": "module",
+  "exports": "./src/index.ts",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.js"
+    "start": "ts-node src/index.ts"
   },
   "author": "Kamil Szelągiewicz",
   "license": "ISC",
   "dependencies": {
+    "@types/lowdb": "^1.0.11",
     "discord.js": "^14.7.1",
-    "lowdb": "^5.0.5",
+    "lowdb": "^5.1.0",
     "ts-node": "^10.9.1"
   },
   "engines": {
