@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newVersion/CreateBuilder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newVersion/ExampleGui.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newVersion/Gui.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newVersion/GuiInterface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newVersion/Initiator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/A.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/B.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/BaseComponent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ComponentInterface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Gui.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/builder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test2/Gui.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discordGui/DbManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DbManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discordGui/DiscordGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DiscordGui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discordGui/DiscordGuiWatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/DiscordGuiWatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/IteratorGui/IteratorGui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/IteratorGui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/musicPlayer/MusicPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/musicPlayer/MusicPlayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discordGui/component/ButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/component/ButtonComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/discordGui/ts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/src/newVersion&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/newVersion" />
       <recent name="$PROJECT_DIR$/discordGui/ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -131,6 +135,10 @@
       <workItem from="1677423800956" duration="6529000" />
       <workItem from="1677445358413" duration="199000" />
       <workItem from="1677452324327" duration="3837000" />
+      <workItem from="1677515450513" duration="661000" />
+      <workItem from="1677516754742" duration="1061000" />
+      <workItem from="1677518784143" duration="3072000" />
+      <workItem from="1677526946997" duration="8738000" />
     </task>
     <servers />
   </component>

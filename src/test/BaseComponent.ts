@@ -1,7 +1,5 @@
-import Config from "../config.json" assert {type: "json"};
-import {ButtonBuilder} from "discord.js";
-// experimental feature!
-const { prefix, splitter } = Config;
+import { ButtonBuilder } from "discord.js";
+import { prefix, splitter } from "./config";
 
 class ButtonComponent extends ButtonBuilder {
     uid = null;
@@ -41,7 +39,7 @@ class ButtonComponent extends ButtonBuilder {
         const key = data._components[uid]._key;
         if (key === this.key) {
             const args = guiData.dataManager.getData()._components[uid];
-            await this.execute(guiData, args);
+            await this.execute(guiData, args: Param);
         }
     }
 

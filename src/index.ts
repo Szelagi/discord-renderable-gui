@@ -3,6 +3,7 @@ import client from "./client/client.js";
 //import MusicPlayer from "./gui/musicPlayer/MusicPlayer.js";
 import IteratorGui from "./gui/IteratorGui/IteratorGui.js";
 import { GuiWatcher } from "./discordGui/index.js";
+import B from "./test/B";
 
 client.on("ready", () => {
     console.log(client.user.tag, ": ready");
@@ -16,3 +17,5 @@ client.on("interactionCreate", async (interaction) => {
         await IteratorGui.create(interaction);
     }
 });
+
+new B((a) => {});

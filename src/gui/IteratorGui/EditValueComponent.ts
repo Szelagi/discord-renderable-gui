@@ -1,6 +1,11 @@
 import { Component } from "../../discordGui/index.js";
 import { ButtonBuilder, ButtonStyle } from "discord.js";
 
+type Param = {
+    number: number;
+    maxValue: number;
+};
+
 class EditValueComponent extends Component {
     static key = "editValueComponent";
     number: number;
@@ -24,7 +29,7 @@ class EditValueComponent extends Component {
         }
     }
 
-    static async execute(g, p) {
+    static async execute(g, p: Param) {
         const data = g.dataManager.getData();
         if (!EditValueComponent.isDisable(p.number, p.maxValue)) {
             data.value += p.number;
