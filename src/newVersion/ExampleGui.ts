@@ -1,9 +1,12 @@
-import Gui from "./Gui";
+type GuiData = {
+    value: string;
+    index: number;
+};
 
-class MyGui extends Gui {
-    init() {}
+class MyGui {
+    static init(g, data: GuiData) {}
 
-    use() {}
+    static use(g, data: GuiData) {}
 
-    render() {}
+    static render(g, data: GuiData) {}
 }

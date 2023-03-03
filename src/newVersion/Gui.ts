@@ -6,10 +6,8 @@ type Dbg = {
     data: Object;
 };
 
-export default abstract class Gui<DataType> {
-    data: DataType;
+export default abstract class Gui {
     abstract key: string;
-
 
     static create(createBuilder: CreateBuilder) {
         const dbg: Dbg = {

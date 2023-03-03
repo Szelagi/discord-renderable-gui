@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a79f67-82b9-4629-bd2c-625ef5b660d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/newVersion/CreateBuilder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newVersion/ExampleGui.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newVersion/Gui.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newVersion/GuiInterface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newVersion/Initiator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/A.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/B.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BaseComponent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ComponentInterface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Gui.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/builder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test2/Gui.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/example/MyView.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/example/PageMover.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/example/PlayerGui.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discordGui/component/ButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discordGui/component/ButtonComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/IteratorGui/EditValueComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newVersion/ExampleGui.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/newVersion/ExampleGui.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newVersion/Gui.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/newVersion/Gui.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newVersion/GuiInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/newVersion/GuiInterface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/src/newVersion&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/node_modules/prettier&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "last_opened_file_path": "/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/src/newVersion",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/node_modules/prettier",
+    "rearrange.code.on.save": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.TypeScript",
+    "ts.external.directory.path": "/Users/kamil/Documents/Projekty/GitHub/discord-renderable-gui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/newVersion" />
@@ -139,6 +129,7 @@
       <workItem from="1677516754742" duration="1061000" />
       <workItem from="1677518784143" duration="3072000" />
       <workItem from="1677526946997" duration="8738000" />
+      <workItem from="1677778288256" duration="5828000" />
     </task>
     <servers />
   </component>
