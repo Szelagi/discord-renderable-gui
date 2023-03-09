@@ -1,4 +1,4 @@
-# discord-renderable-gui
+# DiscordReactGui Framework
  Biblioteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie 
 
 Wymaga:
