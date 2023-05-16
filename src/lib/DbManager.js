@@ -3,15 +3,15 @@
     aby bardzo łatwo można było ją przerobić na inną bazę danych.
  */
 
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import {dirname, join} from 'node:path'
+import {fileURLToPath} from 'node:url'
 
-import { Low } from 'lowdb'
-import { JSONFile } from 'lowdb/node'
+import {Low} from 'lowdb'
+import {JSONFile} from 'lowdb/node'
 
 // File path
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const file = join(__dirname, '../db.json')
+const file = join(__dirname, '../../db/db.json')
 
 // Configure lowdb to write to JSONFile
 const adapter = new JSONFile(file)
@@ -30,6 +30,7 @@ export default class DbManager {
         await db.write();
         return true;
     }
+
     /**
      * @param id: String
      * @returns {Promise<Object>} {id: String, instance: String, data: Object}
@@ -38,6 +39,7 @@ export default class DbManager {
         await db.read();
         return db.data.guis.find(e => e.id === id);
     }
+
     /**
      * @param id: String
      * @param obj: {id?: String, instance?: String, data: Object}
