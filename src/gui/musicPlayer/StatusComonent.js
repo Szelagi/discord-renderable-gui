@@ -1,12 +1,21 @@
-import {Component} from "../../discordGui/index.js";
+import {Component} from "../../lib/index.js";
 import {ButtonBuilder, ButtonStyle} from "discord.js";
 
 class StatusComonent extends Component {
     static key = 'sdajbknsdjkfn';
+
     constructor(g) {
         super(g, StatusComonent.key);
         this.g = g;
     }
+
+    static async execute(g) {
+        const data = g.dataManager.getData();
+        data.isPlay = !data.isPlay;
+        g.dataManager.saveData();
+        g.displayManager.update();
+    }
+
     render() {
         const data = this.g.dataManager.getData();
         let label;
@@ -19,12 +28,6 @@ class StatusComonent extends Component {
             .setLabel(label)
             .setStyle(ButtonStyle.Primary)
             .setCustomId(this.getCustomId());
-    }
-    static async execute(g) {
-        const data = g.dataManager.getData();
-        data.isPlay = !data.isPlay;
-        g.dataManager.saveData();
-        g.displayManager.update();
     }
 }
 

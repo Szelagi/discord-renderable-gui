@@ -1,7 +1,6 @@
-import {Gui} from "../../discordGui/index.js";
+import {ComponentWatcher, Gui} from "../../lib/index.js";
 import {ActionRowBuilder, EmbedBuilder} from "discord.js";
 import MoveComponent from "./MoveComponent.js";
-import {ComponentWatcher} from "../../discordGui/index.js";
 import StatusComonent from "./StatusComonent.js";
 
 const componentWatcher = new ComponentWatcher(
@@ -10,6 +9,7 @@ const componentWatcher = new ComponentWatcher(
 
 class MusicPlayer extends Gui {
     static useModules = [componentWatcher];
+
     static async init(g) {
         const data = g.dataManager.getData();
         data.list = [
@@ -29,9 +29,11 @@ class MusicPlayer extends Gui {
         data.position = 0;
         data.isPlay = true;
     }
+
     static getSong(list, position) {
         return list[position];
     }
+
     static async render(g) {
         const data = g.dataManager.getData();
         const song = MusicPlayer.getSong(data.list, data.position);
@@ -50,6 +52,7 @@ class MusicPlayer extends Gui {
             ]
         }
     }
+
     static async use() {
 
     }

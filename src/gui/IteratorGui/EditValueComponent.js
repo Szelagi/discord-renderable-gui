@@ -1,8 +1,9 @@
-import {Component} from "../../discordGui/index.js";
+import {Component} from "../../lib/index.js";
 import {ButtonBuilder, ButtonStyle} from "discord.js";
 
 class EditValueComponent extends Component {
     static key = 'editValueComponent';
+
     constructor(g, number, maxValue) {
         super(g, EditValueComponent.key);
         super.setParams({
@@ -11,16 +12,6 @@ class EditValueComponent extends Component {
         })
         this.number = number;
         this.maxValue = maxValue;
-    }
-    render() {
-        const style = this.number > 0 ? ButtonStyle.Success : ButtonStyle.Danger;
-        const isDisable = EditValueComponent.isDisable(this.number, this.maxValue);
-        console.log(isDisable)
-        return new ButtonBuilder()
-            .setLabel(this.number.toString())
-            .setStyle(style)
-            .setCustomId(this.getCustomId())
-            .setDisabled(isDisable);
     }
 
     static isDisable(number, maxValue) {
@@ -37,6 +28,17 @@ class EditValueComponent extends Component {
             data.value += p.number;
         }
         await g.displayManager.update();
+    }
+
+    render() {
+        const style = this.number > 0 ? ButtonStyle.Success : ButtonStyle.Danger;
+        const isDisable = EditValueComponent.isDisable(this.number, this.maxValue);
+        console.log(isDisable)
+        return new ButtonBuilder()
+            .setLabel(this.number.toString())
+            .setStyle(style)
+            .setCustomId(this.getCustomId())
+            .setDisabled(isDisable);
     }
 }
 

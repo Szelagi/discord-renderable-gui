@@ -1,7 +1,6 @@
 import client from "./client/client.js";
 
-import {GuiWatcher} from "./discordGui/index.js";
-import IteratorGui from "./gui/IteratorGui/IteratorGui.js";
+import {GuiWatcher} from "./lib/index.js";
 
 import MusicPlayer from "./gui/musicPlayer/MusicPlayer.js";
 
