@@ -1,13 +1,15 @@
-import CLIENT_CONFIG from "./config.json" assert { type: "json"};// experimental feature!
+import {TOKEN} from "../env.js";
 import rest from "./rest.js";
-import { Client, GatewayIntentBits } from "discord.js";
+import {Client, GatewayIntentBits} from "discord.js";
 import commandLoader from "./commandLoader.js";
 
-const client = new Client({ intents: [
+const client = new Client({
+    intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
-    ]});
+    ]
+});
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -22,6 +24,9 @@ client.on('ready', async () => {
 //     }
 // });
 
-client.login(CLIENT_CONFIG.token);
+client.login(TOKEN).catch(e => {
+    console.error(e);
+    process.exit(1);
+});
 
 export default client;
