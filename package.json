@@ -3,18 +3,23 @@
   "version": "0.0.1",
   "description": "Bibloteka pozwalająca tworzyć odświeżane interfejsy na czacie w discordzie",
   "exports": "./index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "start": "node src/index.js"
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
   },
   "author": "Kamil Szelągiewicz",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^20.2.1",
     "discord.js": "^14.11.0",
-    "dotenv": "^16.0.3",
-    "lowdb": "^5.0.5"
+    "dotenv": "^16.0.3"
   },
   "engines": {
     "node": ">=14.16"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }

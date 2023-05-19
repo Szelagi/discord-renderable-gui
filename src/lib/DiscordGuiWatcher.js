@@ -1,14 +1,15 @@
 import GuiData from "./GuiData.js";
-import { ButtonInteraction } from "discord.js";
-import DbManager from "./DbManager.js";
+import {ButtonInteraction} from "discord.js";
+import DbManager from "./DbManager.ts";
 import CallerType from "./CallerType.js";
 import DisplayManager from "./manager/DisplayManager.js";
-import Config from './config.json' assert { type: "json"};// experimental feature!
+import Config from './config.json' assert {type: 'json'}; // experimental feature!
 
 const prefix = Config.prefix;
 
 export default class DiscordGuiWatcher {
     #classGuis = [];
+
     constructor(client) {
         client.on('interactionCreate', async (i) => {
             try {
@@ -30,11 +31,12 @@ export default class DiscordGuiWatcher {
                     }
 
                 }
-            } catch(e) {
+            } catch (e) {
                 console.error(e);
             }
         });
     }
+
     bindGui(classGui) {
         this.#classGuis.push(classGui);
         return this;

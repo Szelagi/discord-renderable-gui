@@ -1,4 +1,4 @@
-import DbManager from "./DbManager.js";
+import DbManager from "./DbManager.ts";
 import GuiBuilder from "./GuiBuilder.js";
 import GuiData from "./GuiData.js";
 import CallerType from "./CallerType.js";
