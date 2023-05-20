@@ -2,14 +2,15 @@
 // Gui as object of class version
 // my note: initiator(params, data, builder)
 import Builder from "./Builder";
+import {Initiator} from "../types/interface";
 
-class Gui {
+class Gui<Input, Data> {
     #key : string;
-    #initiator;
+    #initiator : Initiator<Input, Data>;
     #executor;
     #watchers;
 
-    constructor(key) {
+    constructor(key: string) {
         this.#key = key;
         this.#watchers = [];
     }
