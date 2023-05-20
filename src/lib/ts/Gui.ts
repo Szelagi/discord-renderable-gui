@@ -1,7 +1,7 @@
 
 // Gui as object of class version
 // my note: initiator(params, data, builder)
-import Builder from "../Builder";
+import Builder from "./Builder";
 
 class Gui {
     #key : string;

@@ -1,18 +1,13 @@
+import {BuilderOptionEnum} from "../types/enum";
+import {Channel, Interaction, Message} from "discord.js";
+
 export default class Builder {
-    #type;
-    #channel;
-    #message;
-    #interaction
+    #type : BuilderOptionEnum;
+    #channel : Channel;
+    #message : Message; //maybe the wrong type
+    #interaction : Interaction; //maybe the wrong type
 
-    static _enumType = {
-        message: 'message',
-        replyMessage: 'reply-message',
-        replyInteraction: 'reply-interaction'
-    }
-
-    static get enumType() {
-        return this._enumType;
-    }
+    static enumType = BuilderOptionEnum;
 
     get type() {
         return this.#type;
@@ -31,17 +26,17 @@ export default class Builder {
     }
 
     callAsMessage(channel) {
-        this.#type = this.constructor._enumType.message;
+        this.#type = BuilderOptionEnum.message;
         this.#channel = channel;
     }
 
     callAsReplyMessage(message) {
-        this.#type = this.constructor._enumType.replyMessage;
+        this.#type = BuilderOptionEnum.replyMessage;
         this.#message = message;
     }
 
     callAsReplyInteraction(interaction) {
-        this.#type = this.constructor._enumType.replyInteraction;
+        this.#type = BuilderOptionEnum.replyInteraction;
         this.#interaction = interaction;
     }
 }

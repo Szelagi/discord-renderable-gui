@@ -2,7 +2,6 @@ import DbManager from "./DbManager.ts";
 import GuiBuilder from "./GuiBuilder.js";
 import GuiData from "./GuiData.js";
 import CallerType from "./CallerType.js";
-import Builder from "./Builder.js";
 
 
 // (old) Gui as abstract class version
