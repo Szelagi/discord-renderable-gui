@@ -29,10 +29,11 @@ class Gui<Input, Data> {
 
     async create(initiatorParams) {
         const dbg = {
-            id: undefined,
+            id: '',
             key: this.#key,
-            data: {}
+            data: {} as Data
         }
+        const data: Data = dbg.data as Data
         const builder = new Builder();
         await this.#initiator(initiatorParams, dbg.data, builder);
         if (!builder.type) throw new Error('Unset builder option!');
