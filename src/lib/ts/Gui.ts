@@ -4,7 +4,7 @@
 import Builder from "./Builder";
 import {Initiator} from "../types/interface";
 
-class Gui<Input, Data> {
+export default class Gui<Input, Data> {
     #key : string;
     #initiator : Initiator<Input, Data>;
     #executor;
