@@ -23,3 +23,6 @@ import System from "./ts/System";
 export function Introduce(client: Client, storageSystem: StorageService) : System {
     return new System(client, storageSystem);
 }
+
+import Gui from "./ts/Gui";
+export { Gui as Gui };
