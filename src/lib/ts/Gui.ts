@@ -3,6 +3,7 @@
 // my note: initiator(params, data, builder)
 import Builder from "./Builder";
 import {Initiator} from "../types/interface";
+import {BuilderResult, SessionObject} from "../types/type";
 
 export default class Gui<Input, Data> {
     #key : string;
@@ -15,28 +16,27 @@ export default class Gui<Input, Data> {
         this.#watchers = [];
     }
 
-    setInitiator(initiator) {
+    setInitiator(initiator: Initiator<Input, Data>) {
         this.#initiator = initiator;
+        return this;
     }
 
     setExecutor(executor) {
         this.#executor = executor;
+        return this;
     }
 
     addWatcher(...watcher) {
-
+        return this;
     }
 
     async create(initiatorParams) {
-        const dbg = {
-            id: '',
+        const dbg : SessionObject<Data> = {
+            id: null,
             key: this.#key,
             data: {} as Data
         }
-        const data: Data = dbg.data as Data
         const builder = new Builder();
-        await this.#initiator(initiatorParams, dbg.data, builder);
-        if (!builder.type) throw new Error('Unset builder option!');
-
+        const builderResult = await this.#initiator(initiatorParams, dbg.data, builder);
     }
 }
