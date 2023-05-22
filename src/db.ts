@@ -13,8 +13,10 @@ for (let i = 0; i < folders.length; i++) {
     for (let j = 1; j <= i; j++) {
         path += "/" + folders[j];
     }
-    fs.mkdirSync(path)
-    console.log(`Created directory: ${path}`);
+    if (!fs.existsSync(path)) {
+        fs.mkdirSync(path)
+        console.log(`Created directory: ${path}`);
+    }
 }
 
 if (!fs.existsSync(filePath)) {
