@@ -38,5 +38,8 @@ export default class Gui<Input, Data> {
         }
         const builder = new Builder();
         const builderResult = await this.#initiator(initiatorParams, dbg.data, builder);
+        switch (builderResult.type) {
+
+        }
     }
 }

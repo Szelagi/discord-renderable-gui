@@ -1,7 +1,9 @@
 import {BuilderOptionEnum} from "./enum";
+import {MessageCreateOptions} from "discord.js";
 
 export type BuilderResult = {
-    type: BuilderOptionEnum
+    type: BuilderOptionEnum,
+    responseData: MessageCreateOptions
 }
 
 export type SessionObjectUnknown = {
