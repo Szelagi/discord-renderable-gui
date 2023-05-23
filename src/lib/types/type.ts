@@ -1,12 +1,19 @@
 import {BuilderOptionEnum} from "./enum";
-import {Interaction, Message, MessageCreateOptions, TextChannel} from "discord.js";
+import {
+    Interaction,
+    InteractionReplyOptions,
+    Message,
+    MessageCreateOptions,
+    RepliableInteraction,
+    TextChannel
+} from "discord.js";
 
 export type BuilderResult = {
     type: BuilderOptionEnum,
     channel?: TextChannel,
     message?: Message,
-    interaction?: Interaction
-    responseData: MessageCreateOptions
+    interaction?: RepliableInteraction
+    responseData: MessageCreateOptions | InteractionReplyOptions
 }
 
 export type SessionObjectUnknown = {
