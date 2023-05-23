@@ -2,7 +2,7 @@ import {Client} from "discord.js";
 import {StorageService} from "../types/interface";
 import Gui from "./Gui";
 
-export default class System {
+export default class SystemWatcher {
     #client: Client;
     #storageService: StorageService;
     #guis: Gui<object, object>[];
@@ -14,8 +14,20 @@ export default class System {
             //...
         })
     }
-    addGui(gui: Gui<object, object>): System {
+    appendGui(gui: Gui<object, object>): SystemWatcher {
         this.#guis.push(gui);
         return this;
+    }
+
+    get client(): Client {
+        return this.#client;
+    }
+
+    get storageService(): StorageService {
+        return this.#storageService;
+    }
+
+    get guis(): Gui<object, object>[] {
+        return this.#guis;
     }
 }
