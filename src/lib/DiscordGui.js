@@ -4,7 +4,7 @@ import GuiData from "./GuiData.js";
 import CallerType from "./CallerType.js";
 
 
-// (old) Gui as abstract class version
+// (old) GuiBuilder as abstract class version
 export default class DiscordGui {
     /*
         @guiBuilder: GuiBuilder || Interaction || Message

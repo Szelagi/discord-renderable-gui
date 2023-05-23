@@ -1,5 +1,6 @@
 import {Client} from "discord.js";
 import {StorageService} from "../types/interface";
+import GuiBuilder from "./GuiBuilder";
 import Gui from "./Gui";
 
 export default class SystemWatcher {

@@ -1,43 +1,26 @@
-
-// Gui as object of class version
-// my note: initiator(params, data, builder)
+import GuiBuilder from "./GuiBuilder";
+import {Initiator} from "../types/interface";
 import Builder from "./Builder";
-import {Initiator, StorageService} from "../types/interface";
-import {BuilderResult, SessionObject} from "../types/type";
 import {BuilderOptionEnum} from "../types/enum";
-import {ChatInputCommandInteraction, MessageCreateOptions, MessageInteraction, RepliableInteraction} from "discord.js";
-import {InteractionReplyOptions} from "discord.js";
+import {InteractionReplyOptions, MessageCreateOptions} from "discord.js";
 import SystemWatcher from "./SystemWatcher";
 
-export default class Gui<Input, Data> {
-    #key : string;
-    #systemWatcher : SystemWatcher;
-    #initiator : Initiator<Input, Data>;
+export default class Gui<T extends object, F extends object> {
+    #key: string;
+    #initiator: Initiator<T, F>
     #executor;
     #watchers;
-
-    constructor(key: string, systemWatcher: SystemWatcher) {
-        this.#key = key;
-        this.#watchers = [];
-        this.#systemWatcher = systemWatcher;
+    #systemWatcher: SystemWatcher;
+    constructor(guiBuilder: GuiBuilder<T, F>) {
+        this.#key = guiBuilder.key;
+        this.#initiator = guiBuilder.initiator;
+        this.#executor = guiBuilder.executor;
+        this.#watchers = guiBuilder.watchers;
+        this.#systemWatcher = guiBuilder.systemWatcher;
+        this.#systemWatcher.appendGui(this);
     }
-
-    setInitiator(initiator: Initiator<Input, Data>) {
-        this.#initiator = initiator;
-        return this;
-    }
-
-    setExecutor(executor) {
-        this.#executor = executor;
-        return this;
-    }
-
-    addWatcher(...watcher) {
-        return this;
-    }
-
-    async create(initiatorParams: Input) {
-        const data : Data = {} as Data;
+    async create(initiatorParams: T) {
+        const data : F = {} as F;
         const builder = new Builder();
         const builderResult = await this.#initiator(initiatorParams, data, builder);
         let id: string;
