@@ -1,5 +1,12 @@
 import {BuilderOptionEnum} from "../types/enum";
-import {Interaction, Message, MessageCreateOptions, TextChannel} from "discord.js";
+import {
+    Interaction,
+    InteractionReplyOptions,
+    Message,
+    MessageCreateOptions,
+    RepliableInteraction,
+    TextChannel
+} from "discord.js";
 import {BuilderResult} from "../types/type";
 
 export default class Builder {
@@ -14,15 +21,15 @@ export default class Builder {
 
     callAsReplyMessage(message: Message, responseData: MessageCreateOptions) : BuilderResult {
         return {
-            type: BuilderOptionEnum.message,
+            type: BuilderOptionEnum.replyMessage,
             responseData,
             message,
         }
     }
 
-    callAsReplyInteraction(interaction: Interaction, responseData: MessageCreateOptions) : BuilderResult {
+    callAsReplyInteraction(interaction: RepliableInteraction, responseData: MessageCreateOptions | InteractionReplyOptions) : BuilderResult {
         return {
-            type: BuilderOptionEnum.message,
+            type: BuilderOptionEnum.replyInteraction,
             responseData,
             interaction,
         }
