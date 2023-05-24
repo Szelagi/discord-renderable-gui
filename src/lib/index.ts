@@ -1,5 +1,5 @@
 // import DiscordGui from "./DiscordGui.js";
-// export { DiscordGui as Gui };
+// export { DiscordGui as GuiBuilder };
 //
 // import DiscordGuiWatcher from "./DiscordGuiWatcher.js";
 // export { DiscordGuiWatcher as GuiWatcher };
@@ -17,12 +17,12 @@
 import {SessionObjectUnknown} from "./types/type";
 import {Client} from "discord.js";
 import {StorageService} from "./types/interface";
-import System from "./ts/System";
+import SystemWatcher from "./ts/SystemWatcher";
 
 
-export function Introduce(client: Client, storageSystem: StorageService) : System {
-    return new System(client, storageSystem);
+export function Introduce(client: Client, storageSystem: StorageService) : SystemWatcher {
+    return new SystemWatcher(client, storageSystem);
 }
 
-import Gui from "./ts/Gui";
-export { Gui as Gui };
+import GuiBuilder from "./ts/GuiBuilder";
+export { GuiBuilder as GuiBuilder };

@@ -1,14 +1,15 @@
 import GuiBuilder from "./GuiBuilder";
-import {Initiator} from "../types/interface";
+import {Executor, Initiator} from "../types/interface";
 import Builder from "./Builder";
 import {BuilderOptionEnum} from "../types/enum";
-import {InteractionReplyOptions, MessageCreateOptions} from "discord.js";
+import {InteractionReplyOptions, MessageCreateOptions, RepliableInteraction} from "discord.js";
 import SystemWatcher from "./SystemWatcher";
+import {SessionObject, SessionObjectUnknown} from "../types/type";
 
 export default class Gui<T extends object, F extends object> {
     #key: string;
     #initiator: Initiator<T, F>
-    #executor;
+    #executor: Executor<F>;
     #watchers;
     #systemWatcher: SystemWatcher;
     constructor(guiBuilder: GuiBuilder<T, F>) {
@@ -19,6 +20,26 @@ export default class Gui<T extends object, F extends object> {
         this.#systemWatcher = guiBuilder.systemWatcher;
         this.#systemWatcher.appendGui(this);
     }
+    async _executeAs(sessionObject: SessionObject<F>, interaction: RepliableInteraction) {
+        if (interaction.isButton() && interaction.isMessageComponent()) {
+            await this.#executor(sessionObject.data, interaction);
+            await this.#systemWatcher.storageService.alter(sessionObject.id, sessionObject.data);
+        } else {
+            throw new Error(`Invalid gui execution!`);
+        }
+    }
+    // async tryExecuteAs(interaction: RepliableInteraction) {
+    //     return new Promise(async (resolve, reject) => {
+    //         if (interaction.isButton() && interaction.isMessageComponent()) {
+    //             const id = interaction.message.id;
+    //             const sessionObject = this.#systemWatcher.storageService.get(id) as SessionObject<F>;
+    //             if (!sessionObject) return;
+    //             await this.#executor(sessionObject.data, interaction);
+    //             resolve(sessionObject);
+    //         }
+    //         reject();
+    //     });
+    // }
     async create(initiatorParams: T) {
         const data : F = {} as F;
         const builder = new Builder();
@@ -65,5 +86,9 @@ export default class Gui<T extends object, F extends object> {
             }
         }
         await this.#systemWatcher.storageService.insert(id, this.#key, data as object);
+    }
+
+    get key(): string {
+        return this.#key;
     }
 }
