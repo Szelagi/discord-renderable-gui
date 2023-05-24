@@ -2,7 +2,7 @@
 // GuiBuilder as object of class version
 // my note: initiator(params, data, builder)
 import Builder from "./Builder";
-import {Initiator, StorageService} from "../types/interface";
+import {Executor, Initiator, StorageService} from "../types/interface";
 import {BuilderResult, SessionObject} from "../types/type";
 import {BuilderOptionEnum} from "../types/enum";
 import {ChatInputCommandInteraction, MessageCreateOptions, MessageInteraction, RepliableInteraction} from "discord.js";
@@ -14,7 +14,7 @@ export default class GuiBuilder<InputParams extends object, SessionData extends 
     #key : string;
     #systemWatcher : SystemWatcher;
     #initiator : Initiator<InputParams, SessionData>;
-    #executor;
+    #executor: Executor<SessionData>;
     #watchers;
 
     constructor(key: string, systemWatcher: SystemWatcher) {
@@ -28,7 +28,7 @@ export default class GuiBuilder<InputParams extends object, SessionData extends 
         return this;
     }
 
-    setExecutor(executor) {
+    setExecutor(executor: Executor<SessionData>) {
         this.#executor = executor;
         return this;
     }

@@ -1,9 +1,13 @@
 import {BuilderResult, SessionObjectUnknown} from "./type";
 import Builder from "../ts/Builder";
-import {MessageCreateOptions} from "discord.js";
+import {MessageCreateOptions, RepliableInteraction} from "discord.js";
 
 export interface Initiator<T, F> {
     (params: T, data: F, builder: Builder) : BuilderResult
+}
+
+export interface Executor<T> {
+    (data: T, interaction: RepliableInteraction): void;
 }
 
 export interface StorageService {
